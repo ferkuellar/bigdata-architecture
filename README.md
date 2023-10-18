@@ -23,6 +23,9 @@ El proyecto se enfoca en el análisis y la predicción del riesgo de accidentes 
 ## Limitaciones y Consideraciones Legales
 Es importante tener en cuenta que el conjunto de datos podría tener días faltantes debido a problemas de conectividad durante la recopilación de datos. Además, el uso de este dataset está restringido a fines de investigación y académicos, y requiere la citación de trabajos académicos específicos.
 
+## Valor Añadido
+Este proyecto no solo proporciona análisis estadísticos, sino insights accionables diseñados para impulsar cambios significativos en la seguridad vial. Al combinar tecnologías de vanguardia en el procesamiento y análisis de Big Data, aspiramos a convertir estos millones de registros en una carretera más segura para todos.
+
 ## Fuentes de Datos
 - APIs de Tráfico
 - Sensores de Carreteras
