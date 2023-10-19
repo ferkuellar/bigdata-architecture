@@ -35,36 +35,58 @@ Este proyecto no solo proporciona análisis estadísticos, sino insights acciona
 # Modelo Operacional del Proyecto "Revolución en Seguridad Vial"
 
 ## Introducción
-Este documento describe el modelo operacional del proyecto, detallando el flujo de trabajo y las operaciones que se llevarán a cabo en la arquitectura planteada.
+Este documento describe el modelo operacional del proyecto, detallando los pasos a seguir para ejecutar cada componente de la arquitectura propuesta.
 
-## Lista de Pasos
+## Secuencia de Pasos
 
-### Fase de Ingesta de Datos
-1. **Streaming en Tiempo Real**: Utilizar Kafka para capturar datos en tiempo real de diversas APIs y sensores de tráfico.
-2. **Ingesta en Batch**: Utilizar Flume para la ingestión de datos en lotes desde bases de datos de agencias gubernamentales.
+### Fase 1: Configuración del Entorno en la Nube
+1. **Configurar Google Cloud Platform (GCP)**
+    - Crear un nuevo proyecto en GCP.
+    - Habilitar las APIs necesarias (BigQuery, Google Storage, etc.).
+    
+2. **Configurar Google Storage**
+    - Crear un nuevo bucket para almacenar los datasets y otros recursos.
 
-### Fase de Procesamiento y Almacenamiento
-3. **Almacenamiento en HDFS**: Guardar los datos crudos en el sistema de archivos distribuidos Hadoop (HDFS).
-4. **Procesamiento con MapReduce**: Utilizar algoritmos de MapReduce en un clúster de Hadoop para transformar y limpiar los datos.
+### Fase 2: Ingesta de Datos
+1. **Configurar Kafka para Streaming en Tiempo Real**
+    - Instalar y configurar Kafka en un cluster.
+    - Definir los topics para las distintas fuentes de datos.
 
-### Fase de Análisis en Tiempo Real
-5. **Elasticsearch**: Indexar los datos procesados en Elasticsearch para habilitar búsquedas y análisis en tiempo real.
+2. **Configurar Flume para Ingesta de Datos en Batch**
+    - Instalar y configurar Apache Flume.
+    - Definir los flujos para la ingestión de datos.
 
-### Fase de Análisis Profundo
-6. **Consultas en BigQuery**: Realizar consultas SQL complejas en BigQuery para análisis profundos.
-7. **Exploración en Jupyter Notebooks**: Utilizar cuadernos Jupyter para el análisis exploratorio de datos y el prototipado de modelos.
+### Fase 3: Procesamiento de Datos
+1. **Configurar Cluster de Hadoop**
+    - Desplegar un cluster de Hadoop en la nube o en servidores locales.
+    - Configurar HDFS y MapReduce.
 
-### Fase de Data Mart y Data Warehouse
-8. **Creación de Datamarts**: Segmentar los datos en datamarts específicos para facilitar el acceso y las consultas.
-9. **Data Warehouse**: Consolidar los datos en un almacén de datos para consultas más estructuradas.
+2. **Configurar Elasticsearch**
+    - Instalar y configurar Elasticsearch para análisis en tiempo real.
 
-### Fase de Visualización y Compartir Información
-10. **Visualización en Tableau**: Crear dashboards y visualizaciones interactivas en Tableau.
-11. **APIs para Compartir Insights**: Desarrollar APIs para compartir los resultados en tiempo real con otras partes interesadas.
+### Fase 4: Análisis y Transformación
+1. **Jupyter Notebooks**
+    - Crear notebooks para análisis exploratorio de datos y prototipado.
+    
+2. **BigQuery**
+    - Realizar consultas complejas y análisis profundos usando BigQuery.
 
-### Fase de Monitoreo y Mantenimiento
-12. **Monitoreo del Sistema**: Utilizar herramientas de monitoreo para garantizar el rendimiento y la calidad de los datos.
-13. **Actualizaciones y Mantenimiento**: Implementar actualizaciones y mantenimientos periódicos para asegurar la robustez del sistema.
+### Fase 5: Presentación y Visualización
+1. **Tableau**
+    - Conectar Tableau al Data Warehouse o a BigQuery para crear dashboards.
+
+2. **APIs**
+    - Desarrollar APIs para compartir resultados en tiempo real.
+
+### Fase 6: Monitoreo y Mantenimiento
+1. **Herramientas de Monitoreo**
+    - Implementar herramientas de monitoreo para evaluar el rendimiento del sistema.
+
+2. **Control de Versiones con DVC**
+    - Implementar DVC para el control de versiones de datasets y modelos de machine learning.
+
+## Conclusión
+Este modelo operacional sirve como una guía detallada para implementar y ejecutar el proyecto "Revolución en Seguridad Vial" de manera eficiente y efectiva.
 
 ## Conclusión
 Este modelo operacional sirve como una guía detallada para la ejecución del proyecto "Revolución en Seguridad Vial", asegurando que cada componente de la arquitectura se utilice de manera efectiva para alcanzar los objetivos del proyecto.
