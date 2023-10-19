@@ -88,10 +88,6 @@ Este documento describe el modelo operacional del proyecto, detallando los pasos
 ## Conclusión
 Este modelo operacional sirve como una guía detallada para implementar y ejecutar el proyecto "Revolución en Seguridad Vial" de manera eficiente y efectiva.
 
-## Conclusión
-Este modelo operacional sirve como una guía detallada para la ejecución del proyecto "Revolución en Seguridad Vial", asegurando que cada componente de la arquitectura se utilice de manera efectiva para alcanzar los objetivos del proyecto.
-
-
 # Revisión Final del Proyecto "Revolución en Seguridad Vial"
 
 ## Resumen
