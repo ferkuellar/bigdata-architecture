@@ -10,19 +10,22 @@ El proyecto se enfoca en el [análisis y la predicción del riesgo de accidentes
 - **Evaluación de Infraestructuras Viales**: Analizar el impacto de las señales de tráfico, rotondas y otros elementos de infraestructura.
 - **Comportamiento de Conducción durante la Pandemia de COVID-19**: Utilizar datos más recientes para analizar cambios en el comportamiento del tráfico y accidentes durante la pandemia.
 
-## Metodologías y Herramientas Avanzadas
+### Fuentes de Datos:
 - **Dataset**: [US Accidents Dataset](https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents)
 - **DMV USA**: [Registro en DMV USA](https://api.data.gov/signup/)
 - **Weather API**: [API del Clima](https://spire.com/weather/?utm_source=adwords&utm_medium=ppc&utm_campaign=&utm_term=weather+api&hsa_acc=1880479595&hsa_cam=15617857150&hsa_grp=135127222310&hsa_ad=570432678121&hsa_src=g&hsa_tgt=kwd-13737666095&hsa_kw=weather+api&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad=1&gclid=CjwKCAjwp8OpBhAFEiwAG7NaEvHXdVlVCUCeDD5uaNrrHMJWRpBIXRwvu2tTWNZWIFiNCLh9Y3rEXBoCU_8QAvD_BwE)
 - **Road Sensor Api**: [API de Sensores de Carreteras](https://www.isarsoft.com/solutions/traffic?gad=1&gclid=CjwKCAjwp8OpBhAFEiwAG7NaEu16xrf7MXoF8-tZvEqSFqoaANoVVxSNwb1bRb0ac_s6PoltDyqIrRoCYPwQAvD_BwE)
+
+### Componentes de Metodologías y Herramientas Avanzadas:
 - **Hadoop y Cluster de Hadoop**: Para el procesamiento de grandes volúmenes de datos.
 - **BigQuery**: Para consultas SQL en datasets muy grandes.
-- **Jupyter Notebooks**: Para el análisis exploratorio de datos y prototipado rápido.
+- **Jupyter Notebooks**: Para el análisis exploratorio de datos y el prototipado rápido.
 - **Datamarts**: Para consultas más rápidas y específicas.
-- **Streaming de Datos en Tiempo Real**: Implementación de un pipeline de datos en tiempo real usando Kafka.
-- **Almacenamiento en Columnas**: Utilidad de Google Bigtable o Apache Cassandra para consultas analíticas rápidas.
-- **Control de Versiones para Datos (DVC)**: Para mantener un control de versiones de datasets y modelos de machine learning.
-- **Automatización y Orquestación de Flujos de Trabajo**: Uso de herramientas como Apache Airflow o Luigi para automatizar el pipeline ETL.
+- **Streaming de Datos en Tiempo Real**: Implementación de un pipeline de datos en tiempo real utilizando Kafka.
+- **Almacenamiento en Columnas**: Utilidad de Google Bigtable o Apache Cassandra utilizada para consultas analíticas rápidas.
+- **Control de Versiones para Datos (DVC)**: Utilizado para mantener un control de versiones de datasets y modelos de machine learning.
+- **Automatización y Orquestación de Flujos de Trabajo**: Herramientas como Apache Airflow o Luigi se utilizan para automatizar el pipeline ETL.
+
 
 ## Limitaciones y Consideraciones Legales
 Es importante tener en cuenta que el conjunto de datos podría tener días faltantes debido a problemas de conectividad durante la recopilación de datos. Además, el uso de este dataset está restringido a fines de investigación y académicos, y requiere la citación de trabajos académicos específicos.
