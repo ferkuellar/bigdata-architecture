@@ -33,35 +33,41 @@ Es importante tener en cuenta que el conjunto de datos podría tener días falta
 ## Valor Añadido
 Este proyecto no solo proporciona análisis estadísticos, sino insights accionables diseñados para impulsar cambios significativos en la seguridad vial. Al combinar tecnologías de vanguardia en el procesamiento y análisis de Big Data, aspiramos a convertir estos millones de registros en una carretera más segura para todos.
 
-## Fuentes de Datos
-- APIs de Tráfico
-- Sensores de Carreteras
-- Bases de datos de agencias gubernamentales
+## Introducción
+Este documento describe el modelo operacional del proyecto, detallando el flujo de trabajo y las operaciones que se llevarán a cabo en la arquitectura planteada.
 
-## Ingesta de Datos
-- Kafka para streaming de datos en tiempo real
-- Flume para la ingesta de datos en batch
+## Lista de Pasos
 
-## Procesamiento y Almacenamiento
-- Cluster de Hadoop con HDFS para almacenamiento y MapReduce para procesamiento
-- Elasticsearch para búsquedas de texto completo y análisis en tiempo real
+### Fase de Ingesta de Datos
+1. **Streaming en Tiempo Real**: Utilizar Kafka para capturar datos en tiempo real de diversas APIs y sensores de tráfico.
+2. **Ingesta en Batch**: Utilizar Flume para la ingestión de datos en lotes desde bases de datos de agencias gubernamentales.
 
-## Análisis y Transformación de Datos
-- Jupyter Notebooks para análisis exploratorio y prototipado
+### Fase de Procesamiento y Almacenamiento
+3. **Almacenamiento en HDFS**: Guardar los datos crudos en el sistema de archivos distribuidos Hadoop (HDFS).
+4. **Procesamiento con MapReduce**: Utilizar algoritmos de MapReduce en un clúster de Hadoop para transformar y limpiar los datos.
 
-## Datamarts y Data Warehouse
-- Creación de datamarts específicos para diferentes aspectos como condiciones climáticas, ubicaciones geográficas, etc.
-- Data Warehouse para un almacenamiento más estructurado y consultas
+### Fase de Análisis en Tiempo Real
+5. **Elasticsearch**: Indexar los datos procesados en Elasticsearch para habilitar búsquedas y análisis en tiempo real.
 
-## Orquestación y Automatización
-- Control de Versiones para Datos (DVC)
+### Fase de Análisis Profundo
+6. **Consultas en BigQuery**: Realizar consultas SQL complejas en BigQuery para análisis profundos.
+7. **Exploración en Jupyter Notebooks**: Utilizar cuadernos Jupyter para el análisis exploratorio de datos y el prototipado de modelos.
 
-## Presentación y Visualización
-- Tableau para dashboards y visualizaciones interactivas
-- APIs para compartir resultados en tiempo real con otras aplicaciones o stakeholders
+### Fase de Data Mart y Data Warehouse
+8. **Creación de Datamarts**: Segmentar los datos en datamarts específicos para facilitar el acceso y las consultas.
+9. **Data Warehouse**: Consolidar los datos en un almacén de datos para consultas más estructuradas.
 
-## Monitoreo y Mantenimiento
-- Herramientas de monitoreo para el rendimiento del sistema y la calidad de los datos.
+### Fase de Visualización y Compartir Información
+10. **Visualización en Tableau**: Crear dashboards y visualizaciones interactivas en Tableau.
+11. **APIs para Compartir Insights**: Desarrollar APIs para compartir los resultados en tiempo real con otras partes interesadas.
+
+### Fase de Monitoreo y Mantenimiento
+12. **Monitoreo del Sistema**: Utilizar herramientas de monitoreo para garantizar el rendimiento y la calidad de los datos.
+13. **Actualizaciones y Mantenimiento**: Implementar actualizaciones y mantenimientos periódicos para asegurar la robustez del sistema.
+
+## Conclusión
+Este modelo operacional sirve como una guía detallada para la ejecución del proyecto "Revolución en Seguridad Vial", asegurando que cada componente de la arquitectura se utilice de manera efectiva para alcanzar los objetivos del proyecto.
+
 
 # Revisión Final del Proyecto "Revolución en Seguridad Vial"
 
