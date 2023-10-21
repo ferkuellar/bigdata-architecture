@@ -32,60 +32,6 @@ Es importante tener en cuenta que el conjunto de datos podría tener días falta
 ## Valor Añadido
 Este proyecto no solo proporciona análisis estadísticos, sino insights accionables diseñados para impulsar cambios significativos en la seguridad vial. Al combinar tecnologías de vanguardia en el procesamiento y análisis de Big Data, aspiramos a convertir estos millones de registros en una carretera más segura para todos.
 
-# Modelo Operacional del Proyecto "Revolución en Seguridad Vial"
-
-## Introducción
-Este documento describe el modelo operacional del proyecto, detallando los pasos a seguir para ejecutar cada componente de la arquitectura propuesta.
-
-## Secuencia de Pasos
-
-### Fase 1: Configuración del Entorno en la Nube
-1. **Configurar Google Cloud Platform (GCP)**
-    - Crear un nuevo proyecto en GCP.
-    - Habilitar las APIs necesarias (BigQuery, Google Storage, etc.).
-    
-2. **Configurar Google Storage**
-    - Crear un nuevo bucket para almacenar los datasets y otros recursos.
-
-### Fase 2: Ingesta de Datos
-1. **Configurar Kafka para Streaming en Tiempo Real**
-    - Instalar y configurar Kafka en un cluster.
-    - Definir los topics para las distintas fuentes de datos.
-
-2. **Configurar Flume para Ingesta de Datos en Batch**
-    - Instalar y configurar Apache Flume.
-    - Definir los flujos para la ingestión de datos.
-
-### Fase 3: Procesamiento de Datos
-1. **Configurar Cluster de Hadoop**
-    - Desplegar un cluster de Hadoop en la nube o en servidores locales.
-    - Configurar HDFS y MapReduce.
-
-2. **Configurar Elasticsearch**
-    - Instalar y configurar Elasticsearch para análisis en tiempo real.
-
-### Fase 4: Análisis y Transformación
-1. **Jupyter Notebooks**
-    - Crear notebooks para análisis exploratorio de datos y prototipado.
-    
-2. **BigQuery**
-    - Realizar consultas complejas y análisis profundos usando BigQuery.
-
-### Fase 5: Presentación y Visualización
-1. **Tableau**
-    - Conectar Tableau al Data Warehouse o a BigQuery para crear dashboards.
-
-2. **APIs**
-    - Desarrollar APIs para compartir resultados en tiempo real.
-
-### Fase 6: Monitoreo y Mantenimiento
-1. **Herramientas de Monitoreo**
-    - Implementar herramientas de monitoreo para evaluar el rendimiento del sistema.
-
-2. **Control de Versiones con DVC**
-    - Implementar DVC para el control de versiones de datasets y modelos de machine learning.
-
-
 # Diagrama Conceptual del Proceso ETL
 
 Este documento detalla el diagrama conceptual para entender el flujo del proceso ETL (Extracción, Transformación y Carga). Este proceso está organizado en varias fases, cada una con bloques específicos para describir las tareas necesarias.
