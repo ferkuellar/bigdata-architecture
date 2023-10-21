@@ -8,7 +8,6 @@ El proyecto se enfoca en el [análisis y la predicción del riesgo de accidentes
 - **Análisis de Hotspots de Accidentes**: Identificar áreas geográficas con altas tasas de accidentes.
 - **Impacto de las Condiciones Climáticas y Ambientales**: Examinar cómo factores como la lluvia, la presión atmosférica y la visibilidad afectan la probabilidad de accidentes.
 - **Evaluación de Infraestructuras Viales**: Analizar el impacto de las señales de tráfico, rotondas y otros elementos de infraestructura.
-- **Comportamiento de Conducción durante la Pandemia de COVID-19**: Utilizar datos más recientes para analizar cambios en el comportamiento del tráfico y accidentes durante la pandemia.
 
 ## Fuentes de Datos:
 - **Dataset**: [US Accidents Dataset](https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents)
