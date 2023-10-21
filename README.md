@@ -114,18 +114,6 @@ Este documento detalla el diagrama conceptual para entender el flujo del proceso
 
 ---
 
-## Fase 6: Monitoreo y Mantenimiento
-
-### Bloque 6.1: Herramientas de Monitoreo
-
-- **Sub-bloque**: Implementar herramientas de monitoreo.
-
-### Bloque 6.2: Control de Versiones con DVC
-
-- **Sub-bloque**: Implementar DVC.
-
----
-
 ## Conexiones
 
 Las fases están conectadas por flechas que indican la secuencia de las operaciones:
