@@ -85,6 +85,108 @@ Este documento describe el modelo operacional del proyecto, detallando los pasos
 2. **Control de Versiones con DVC**
     - Implementar DVC para el control de versiones de datasets y modelos de machine learning.
 
+
+# Diagrama Conceptual del Proceso ETL
+
+Este documento detalla el diagrama conceptual para entender el flujo del proceso ETL (Extracción, Transformación y Carga). Este proceso está organizado en varias fases, cada una con bloques específicos para describir las tareas necesarias.
+
+---
+
+## Fase 1: Configuración del Entorno en la Nube
+
+### Bloque 1.1: Configurar Google Cloud Platform (GCP)
+
+- **Sub-bloque**: Crear un nuevo proyecto en GCP.
+- **Sub-bloque**: Habilitar las APIs necesarias.
+
+### Bloque 1.2: Configurar Google Storage
+
+- **Sub-bloque**: Crear un nuevo bucket.
+
+:arrow_down_small:  
+(*Una flecha desde Fase 1 a Fase 2 indica que la configuración del entorno en la nube debe completarse antes de la ingesta de datos.*)
+
+---
+
+## Fase 2: Ingesta de Datos
+
+### Bloque 2.1: Configurar Kafka para Streaming en Tiempo Real
+
+- **Sub-bloque**: Instalar y configurar Kafka.
+- **Sub-bloque**: Definir topics.
+
+### Bloque 2.2: Configurar Flume para Ingesta de Datos en Batch
+
+- **Sub-bloque**: Instalar y configurar Apache Flume.
+- **Sub-bloque**: Definir flujos.
+
+:arrow_down_small:  
+(*Flechas conectarían las demás fases en orden secuencial.*)
+
+---
+
+## Fase 3: Procesamiento de Datos
+
+### Bloque 3.1: Configurar Cluster de Hadoop
+
+- **Sub-bloque**: Desplegar cluster.
+- **Sub-bloque**: Configurar HDFS y MapReduce.
+
+### Bloque 3.2: Configurar Elasticsearch
+
+- **Sub-bloque**: Instalar y configurar Elasticsearch.
+
+:arrow_down_small:
+
+---
+
+## Fase 4: Análisis y Transformación
+
+### Bloque 4.1: Jupyter Notebooks
+
+- **Sub-bloque**: Crear notebooks.
+
+### Bloque 4.2: BigQuery
+
+- **Sub-bloque**: Realizar consultas y análisis.
+
+:arrow_down_small:
+
+---
+
+## Fase 5: Presentación y Visualización
+
+### Bloque 5.1: Tableau
+
+- **Sub-bloque**: Conectar Tableau al Data Warehouse o BigQuery.
+
+### Bloque 5.2: APIs
+
+- **Sub-bloque**: Desarrollar APIs.
+
+:arrow_down_small:
+
+---
+
+## Fase 6: Monitoreo y Mantenimiento
+
+### Bloque 6.1: Herramientas de Monitoreo
+
+- **Sub-bloque**: Implementar herramientas de monitoreo.
+
+### Bloque 6.2: Control de Versiones con DVC
+
+- **Sub-bloque**: Implementar DVC.
+
+---
+
+## Conexiones
+
+Las fases están conectadas por flechas que indican la secuencia de las operaciones:
+
+- Una flecha desde Fase 1 a Fase 2: Esto implica que la Fase 1 debe completarse antes de pasar a la Fase 2.
+- Similarmente, las fases subsecuentes están conectadas por flechas para indicar el flujo de las operaciones.
+
 ## Conclusión
 Este modelo operacional sirve como una guía detallada para implementar y ejecutar el proyecto "Revolución en Seguridad Vial" de manera eficiente y efectiva.
 
