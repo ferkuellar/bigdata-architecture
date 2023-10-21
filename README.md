@@ -37,10 +37,28 @@ Este documento detalla el diagrama conceptual para entender el flujo del proceso
 
 ## Fase 1: Configuración del Entorno en la Nube
 
-### Bloque 1.1: Configurar Google Cloud Platform (GCP)
+### Bloque 1.1: # Configuración de Google Cloud Platform (GCP)
 
-- **Sub-bloque**: Crear un nuevo proyecto en GCP.
-- **Sub-bloque**: Habilitar las APIs necesarias.
+En este documento, se detallan los pasos para configurar un proyecto en Google Cloud Platform (GCP) y habilitar las API necesarias.
+
+## Crear un nuevo proyecto en GCP
+
+1. Inicia sesión en tu cuenta de Google o crea una nueva si aún no tienes una.
+2. Accede a [Google Cloud Console](https://console.cloud.google.com/).
+3. En el panel de navegación, haz clic en "Proyectos".
+4. Haz clic en el botón "Crear proyecto" para iniciar el proceso de creación de un nuevo proyecto.
+5. Ingresa un nombre único para tu proyecto y opcionalmente puedes personalizar el ID del proyecto.
+6. Selecciona la organización (si corresponde) y la ubicación geográfica para el proyecto.
+7. Haz clic en "Crear" para crear el proyecto.
+8. 
+## Habilitar las APIs necesarias
+
+Para habilitar las API necesarias en tu proyecto de GCP, sigue estos pasos:
+
+1. En el panel de navegación de la [Consola de Google Cloud](https://console.cloud.google.com/), haz clic en "API y servicios" y luego en "Biblioteca".
+2. Busca la API que deseas habilitar utilizando la barra de búsqueda.
+3. Haz clic en la API que deseas habilitar.
+4. En la página de la API, haz clic en el botón " Habilitar".
 
 ### Bloque 1.2: Configurar Google Storage
 
