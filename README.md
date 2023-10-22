@@ -32,6 +32,7 @@ Este proyecto no solo proporciona análisis estadísticos, sino insights acciona
 
 Este documento detalla el diagrama conceptual para entender el flujo del proceso ETL (Extracción, Transformación y Carga). Este proceso está organizado en varias fases, cada una con bloques específicos para describir las tareas necesarias.
 
+![Texto alternativo](proyecto_etl.drawio.png)
 
 
 ## Conclusión
